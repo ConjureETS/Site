@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/grid/columns.sass";
+
+// Disable the widescreen breakpoint
+$widescreen-enabled: false;
+
+  // Disable the fullhd breakpoint
+$fullhd-enabled: false;
+
