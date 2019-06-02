@@ -1,5 +1,5 @@
 //vars
-$fg: #00bcd4;
+$fg: #115FA2;
 $pi: 3.14;
 
 //config
@@ -8,7 +8,7 @@ $menu-items-always-open: 3;
 $open-distance: 105px;
 $opening-angle: $pi*2;
 $hamburger-spacing: 10px;
-$default-opacity: 0.75;
+$default-opacity: 0.70;
 $ball-spacing: 90px;
 
 %ball {
@@ -40,12 +40,13 @@ $ball-spacing: 90px;
 .menu {
     position: fixed;
     top: 0;
-    right: 0;
+    right: 5px;
     width: 100px;
     height: 100vh;
     box-sizing: border-box;
     font-size: 20px;
     text-align: center;
+    z-index: 1000;
 
     .menu-open {
         display: none;

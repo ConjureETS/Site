@@ -2,30 +2,63 @@
     font-family: Roboto, SansSerif;
 }
 
-body {
-    padding: 0;
-    margin: 0;
+a {
+    outline: none !important;
 }
 
-.logo-container {
+header.logo-container {
     position: fixed;
     top: -15px;
     max-width: 500px;
     max-height: 135px;
     overflow: hidden;
+    z-index: 1000;
 
     img {
         width: 100%;
     }
 }
 
-a {
-    outline: none !important;
+section.full-height {
+    height: 100vh;
+}
+
+section#splashscreen {
+    padding: 0 !important;
+
+    .bg-img {
+        background-image: url('../img/splashscreen.jpg');
+        background-size: cover;
+        -webkit-filter: brightness(60%);
+        filter: brightness(60%);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .splashscreen-text-container {
+        width: 100vw;
+        position: absolute;
+        top: 60%;
+        text-align: center;
+        color: white;
+        font-size: 4.5rem;
+
+        h1 {
+            font-weight: bold;
+        }
+
+        .border-seperator {
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-top: 5px solid white;
+            max-width: 900px;
+            border-radius: 20px;
+        }
+    }
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100vw;
     padding: 15px 0;
 
