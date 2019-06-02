@@ -4,7 +4,7 @@ $pi: 3.14;
 
 //config
 $menu-items: 3;
-$menu-items-always-open: 2;
+$menu-items-always-open: 3;
 $open-distance: 105px;
 $opening-angle: $pi*2;
 $hamburger-spacing: 10px;
@@ -158,6 +158,14 @@ $ball-spacing: 90px;
     .menu-open:checked ~ .menu-item-always-open {
         transition-duration: 90ms+(100ms);
         transform: translate3d(0, $ball-spacing*$menu-items, 0);
+    }
+
+    .language-icon {
+        font-weight: 800;
+        font-size: 1.9rem;
+        color: white;
+        text-decoration: none;
+        text-align: center;
     }
 }
 

@@ -1,12 +1,35 @@
+* {
+    font-family: Roboto, SansSerif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .logo-container {
     position: fixed;
     top: -15px;
     max-width: 500px;
+    max-height: 135px;
+    overflow: hidden;
 
     img {
         width: 100%;
     }
 }
+
 a {
     outline: none !important;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    padding: 15px 0;
+
+    p {
+        text-align: center;
+    }
 }
