@@ -9,26 +9,26 @@ $open-distance: 105px;
 $opening-angle: $pi*2;
 $hamburger-spacing: 10px;
 $default-opacity: 0.70;
-$ball-spacing: 90px;
+$ball-spacing: 72px;
 
 %ball {
     background: $fg;
     border-radius: 100%;
-    width: 70px;
-    height: 70px;
-    margin-left: -35px;
+    width: 60px;
+    height: 60px;
+    margin-left: -20px;
     position: absolute;
     top: 20px;
     color: white;
     text-align: center;
-    line-height: 70px;
+    line-height: 60px;
     transform: translate3d(0, 0, 0);
     transition: transform ease-out 200ms;
     opacity: $default-opacity;
 
     img {
-        width: 52px;
-        height: 52px;
+        width: 42px;
+        height: 42px;
         margin: 9px;
     }
 }
@@ -163,10 +163,33 @@ $ball-spacing: 90px;
 
     .language-icon {
         font-weight: 800;
-        font-size: 1.9rem;
+        font-size: 1.6rem;
         color: white;
         text-decoration: none;
         text-align: center;
+    }
+
+    .menu-item.has-tooltip-text {
+        span {
+            display: none;
+            background: $fg;
+            border-top-left-radius: 60px;
+            border-bottom-left-radius: 60px;
+            height: 60px;
+            position: absolute;
+            right: 30px;
+            padding: 0 35px 0 25px;
+            text-align: center;
+            white-space: nowrap;
+            line-height: 60px;
+            z-index:-1;
+        }
+
+        &:hover {
+            span {
+                display: block;
+            }
+        }
     }
 }
 
