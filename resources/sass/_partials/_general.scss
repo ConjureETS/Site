@@ -35,7 +35,7 @@ header.logo-container {
 
 section {
     h2 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 }
 
@@ -73,67 +73,68 @@ section#activites {
     padding: 0;
     margin: 0;
 
-    div {
+    .sub-section {
         position: relative;
-    }
-
-    div:nth-of-type(2) {
-        margin-top: 25px;
-    }
-
-    div.content {
-        position: absolute;
-        padding: 25px;
         transition: all 2s;
 
+        &.slide {
+            &:not(.animation-inversed) {
+                transform: translateX(40%);
+            }
+
+            &.animation-inversed {
+                transform: translateX(-40%);
+            }
+        }
+
         &:not(.animation-inversed) {
-            left: -40%;
+            div.content {
+                left: -40%;
+            }
         }
 
         &.animation-inversed {
-            right: - 40%;
-        }
-    }
-
-    div.content.slide, div.bg-img.slide {
-        &:not(.animation-inversed) {
-            transform: translateX(40%);
+            div.content {
+                right: - 40%;
+            }
         }
 
-        &.animation-inversed {
-            transform: translateX(-40%);
-        }
-    }
-
-    div.headline {
-        margin-top: 50px;
-        padding: 25px;
-        transition: all 0.25s;
-        position: absolute;
-
-        &:not(.is-headline-inversed) {
-            left: 50px;
+        div.content {
+            position: absolute;
+            padding: 25px;
         }
 
-        &.is-headline-inversed {
-            right: 100px;
+        div.headline {
+            margin-top: 75px;
+            padding: 25px;
+            transition: all 0.25s;
+            position: absolute;
+            color: white;
+
+            &:not(.is-headline-inversed) {
+                left: 50px;
+            }
+
+            &.is-headline-inversed {
+                right: 100px;
+            }
         }
-    }
 
-    div.headline.toggle-visibility {
-        display: none;
-    }
-
-    div.bg-img {
-        position: absolute;
-        transition: all 2s;
-
-        &.gala-img {
-            background-image: url('../img/gala.jpg');
+        div.headline.toggle-visibility {
+            display: none;
         }
 
-        &.mtlgj-img {
-            background-image: url('../img/mtlgj.jpg');
+        .bg-img {
+            position: absolute;
+            transition: all 2s;
+
+            &.gala-img {
+                background-image: url('../img/gala.jpg');
+            }
+
+            &.mtlgj-img {
+                background-image: url('../img/mtlgj.jpg');
+            }
         }
     }
 }

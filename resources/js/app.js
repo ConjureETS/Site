@@ -12,6 +12,5 @@ function addCopyrightCurrentDate() {
 
 function showActivityContent(e) {
     e.target.parentElement.parentElement.querySelector('.headline').classList.toggle('toggle-visibility');
-    e.target.parentElement.parentElement.querySelector('.content').classList.toggle('slide');
-    e.target.parentElement.parentElement.querySelector('.bg-img').classList.toggle('slide');
+    e.target.parentElement.parentElement.classList.toggle('slide');
 }
