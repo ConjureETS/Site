@@ -19,8 +19,24 @@ header.logo-container {
     }
 }
 
-section.full-height {
+.full-height {
     height: 100vh;
+}
+
+.full-width {
+    width: 100vw;
+}
+
+.bg-img {
+    background-size: cover;
+    -webkit-filter: brightness(60%);
+    filter: brightness(60%);
+}
+
+section {
+    h2 {
+        font-size: 3.5rem;
+    }
 }
 
 section#splashscreen {
@@ -28,15 +44,9 @@ section#splashscreen {
 
     .bg-img {
         background-image: url('../img/splashscreen.jpg');
-        background-size: cover;
-        -webkit-filter: brightness(60%);
-        filter: brightness(60%);
-        width: 100vw;
-        height: 100vh;
     }
 
     .splashscreen-text-container {
-        width: 100vw;
         position: absolute;
         top: 60%;
         text-align: center;
@@ -58,8 +68,77 @@ section#splashscreen {
     }
 }
 
+section#activites {
+    height: 200vh;
+    padding: 0;
+    margin: 0;
+
+    div {
+        position: relative;
+    }
+
+    div:nth-of-type(2) {
+        margin-top: 25px;
+    }
+
+    div.content {
+        position: absolute;
+        padding: 25px;
+        transition: all 2s;
+
+        &:not(.animation-inversed) {
+            left: -40%;
+        }
+
+        &.animation-inversed {
+            right: - 40%;
+        }
+    }
+
+    div.content.slide, div.bg-img.slide {
+        &:not(.animation-inversed) {
+            transform: translateX(40%);
+        }
+
+        &.animation-inversed {
+            transform: translateX(-40%);
+        }
+    }
+
+    div.headline {
+        margin-top: 50px;
+        padding: 25px;
+        transition: all 0.25s;
+        position: absolute;
+
+        &:not(.is-headline-inversed) {
+            left: 50px;
+        }
+
+        &.is-headline-inversed {
+            right: 100px;
+        }
+    }
+
+    div.headline.toggle-visibility {
+        display: none;
+    }
+
+    div.bg-img {
+        position: absolute;
+        transition: all 2s;
+
+        &.gala-img {
+            background-image: url('../img/gala.jpg');
+        }
+
+        &.mtlgj-img {
+            background-image: url('../img/mtlgj.jpg');
+        }
+    }
+}
+
 footer {
-    width: 100vw;
     padding: 15px 0;
 
     p {
