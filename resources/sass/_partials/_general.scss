@@ -36,6 +36,12 @@ header.logo-container {
 section {
     h2 {
         font-size: 3rem;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: bold;
     }
 }
 
@@ -64,6 +70,22 @@ section#splashscreen {
             border-top: 5px solid white;
             max-width: 900px;
             border-radius: 20px;
+        }
+    }
+}
+
+section#apropos {
+    padding: 40px 50px;
+
+    * {
+        text-align: center;
+    }
+
+    .columns {
+        margin-top: 50px;
+
+        img.is-quarter {
+            width: 25%;
         }
     }
 }
