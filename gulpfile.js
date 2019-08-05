@@ -1,7 +1,9 @@
 'use strict';
 
 let gulp = require('gulp');
-let uglify = require('gulp-uglify');
+let uglifyes = require('uglify-es');
+let composer = require('gulp-uglify/composer');
+let uglify = composer(uglifyes, console);
 let rename = require('gulp-rename');
 let concat = require('gulp-concat');
 let Fiber = require('fibers');

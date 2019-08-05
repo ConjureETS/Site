@@ -84,6 +84,25 @@ section#apropos {
     .columns {
         margin-top: 50px;
 
+        embed, iframe {
+            margin-top: 10px;
+            height: 600px;
+            width: 500px;
+            border: 1px solid lightgray;
+        }
+
+        address {
+            background: white;
+            padding: 10px;
+            margin: 0 auto;
+            font-size: 0.8rem;
+            text-align: left;
+            border: 1px solid lightgray;
+            max-width: 500px;
+            position: relative;
+            top: -10px;
+        }
+
         img.is-quarter {
             width: 25%;
         }
