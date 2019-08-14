@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Site web officiel du club Conjure de l'ÉTS",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "bulma-carousel": "^4.0.4"
+  },
   "devDependencies": {
     "bulma": "^0.7.5",
     "fibers": "^4.0.1",
