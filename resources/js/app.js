@@ -40,11 +40,17 @@ function pad(n, width, z) {
 
 function animateNumbers(item) {
     let intervalTime = 1;
+    let incrementation = 7;
     setTimeout(function() {
-        let duration = (item.getAttribute('data-endvalue') === null ? new Date().getFullYear() : item.getAttribute('data-endvalue')) * intervalTime;
+        let endValue = item.getAttribute('data-endvalue');
+        endValue = parseInt(endValue === null ? new Date().getFullYear() : endValue);
+        let duration = endValue * intervalTime / incrementation;
+        console.log(duration);
+        console.log((endValue === undefined || endValue === 0 ? new Date().getFullYear() : endValue));
         let animation = setInterval(function() {
             duration -= intervalTime;
-            item.innerHTML = pad(parseInt(item.innerHTML) + 1, 4);
+            let val = parseInt(item.innerHTML);
+            item.innerHTML = pad( (val + incrementation > endValue ? val + (endValue - val) : val + incrementation), 4);
             if(duration <= 0)
                 clearInterval(animation);
         }, intervalTime);
