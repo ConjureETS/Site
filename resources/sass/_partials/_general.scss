@@ -4,6 +4,7 @@
 
 body {
     width: 100%;
+    overflow: hidden;
 }
 
 a {
@@ -260,6 +261,11 @@ section#competitions {
         .slider-navigation-previous, .slider-navigation-next {
             width: 48px;
             height: 48px;
+            opacity: 0.75;
+
+            &:hover {
+                opacity: 1;
+            }
 
             svg {
                 width: 36px;
