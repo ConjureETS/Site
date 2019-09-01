@@ -2,6 +2,10 @@
     font-family: Roboto, SansSerif;
 }
 
+body {
+    width: 100%;
+}
+
 a {
     outline: none !important;
 }
@@ -75,13 +79,11 @@ section#splashscreen {
 }
 
 section#apropos {
-    padding: 40px 50px;
-
     * {
         text-align: center;
     }
 
-    .columns {
+    .column .columns {
         margin-top: 50px;
 
         embed, iframe {
@@ -106,6 +108,21 @@ section#apropos {
         img.is-quarter {
             width: 25%;
         }
+
+        .column {
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+    .sub-section-members {
+        p {
+            margin-bottom: 1rem;
+        }
     }
 }
 
@@ -120,29 +137,43 @@ section#activites {
 
         &.slide {
             &:not(.animation-inversed) {
-                transform: translateX(40%);
+                transform: translateX(25%);
             }
 
             &.animation-inversed {
-                transform: translateX(-40%);
+                transform: translateX(-25%);
             }
         }
 
         &:not(.animation-inversed) {
             div.content {
-                left: -40%;
+                left: -25%;
             }
         }
 
         &.animation-inversed {
             div.content {
-                right: - 40%;
+                right: - 25%;
             }
         }
 
         div.content {
             position: absolute;
             padding: 25px;
+            text-align: justify;
+            overflow-y: hidden;
+
+            p, img {
+                margin-bottom: 1em;
+            }
+
+            img {
+                margin: 1em 0 2em 0;
+                position: relative;
+                left: 20%;
+                width: 60%;
+                text-align: center;
+            }
         }
 
         div.headline {
@@ -151,6 +182,7 @@ section#activites {
             transition: all 0.25s;
             position: absolute;
             color: white;
+            max-width: 35%;
 
             &:not(.is-headline-inversed) {
                 left: 50px;
@@ -158,6 +190,11 @@ section#activites {
 
             &.is-headline-inversed {
                 right: 100px;
+            }
+
+            p {
+                text-align: justify;
+                margin-bottom: 1em;
             }
         }
 
@@ -175,6 +212,27 @@ section#activites {
 
             &.mtlgj-img {
                 background-image: url('../img/mtlgj.jpg');
+            }
+        }
+
+        .is-mtlgj-btn {
+            border-color: #29a6d6;
+            color: #29a6d6;
+
+            &:hover {
+                background-color: #29a6d6;
+                color: white;
+            }
+        }
+
+        .is-gala-btn {
+            border-color: #29a6d6;
+            color: #29a6d6;
+            background-color: transparent;
+
+            &:hover {
+                background-color: #29a6d6;
+                color: white;
             }
         }
     }

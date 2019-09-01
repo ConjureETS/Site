@@ -1,7 +1,7 @@
 (function() {
     addCopyrightCurrentDate();
 
-    document.querySelectorAll('section#activites button').forEach(function(item) {
+    document.querySelectorAll('section#activites .is-mtlgj-btn').forEach(function(item) {
         item.addEventListener('click', showActivityContent);
     })
 
@@ -14,7 +14,7 @@
         pagination: false,
         loop: true,
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         infinite: true,
         icons: {
             previous: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 100 100" width="100" height="100"><defs><clipPath id="_clipPath_Rmt62eEg1OXF13UQV6A0tZ7nRrSHuqzl"><rect width="100" height="100"/></clipPath></defs><g clip-path="url(#_clipPath_Rmt62eEg1OXF13UQV6A0tZ7nRrSHuqzl)"><path d=" M 68.738 87.477 L 68.738 87.477 L 31.262 50 L 68.738 12.523" fill="none" vector-effect="non-scaling-stroke" stroke-width="8" stroke="rgb(132,132,132)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/></g></svg>',
