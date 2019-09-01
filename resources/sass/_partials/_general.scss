@@ -184,6 +184,8 @@ section#activites {
             position: absolute;
             color: white;
             max-width: 35%;
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.5);
 
             &:not(.is-headline-inversed) {
                 left: 50px;
