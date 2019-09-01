@@ -45,8 +45,6 @@ function animateNumbers(item) {
         let endValue = item.getAttribute('data-endvalue');
         endValue = parseInt(endValue === null ? new Date().getFullYear() : endValue);
         let duration = endValue * intervalTime / incrementation;
-        console.log(duration);
-        console.log((endValue === undefined || endValue === 0 ? new Date().getFullYear() : endValue));
         let animation = setInterval(function() {
             duration -= intervalTime;
             let val = parseInt(item.innerHTML);
