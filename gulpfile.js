@@ -26,6 +26,8 @@ gulp.task('sass', function () {
 });
 
 gulp.task('js', function () {
+    gulp.src('node_modules/bulma-carousel/dist/js/bulma-carousel.min.js')
+        .pipe(gulp.dest(directories.destination + 'js/'));
     return gulp.src(directories.source + 'js/**/*.js')
         .pipe(concat('main.js'))
         .pipe(uglify())
@@ -36,5 +38,4 @@ gulp.task('js', function () {
 gulp.task('watch', function() {
     gulp.watch([directories.source + 'sass/**/*.scss'], gulp.series('sass'));
     gulp.watch([directories.source + 'js/**/*.js'], gulp.series('js'));
-
 });
