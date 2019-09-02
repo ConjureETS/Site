@@ -31,6 +31,12 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    header.logo-container {
+        img {
+            width: 75%;
+        }
+    }
+
     section#splashscreen {
         .splashscreen-text-container {
             top: 40%;
@@ -92,7 +98,7 @@
 @media only screen and (max-width: 768px) {
     header.logo-container {
         img {
-            width: 75%;
+            width: 50%;
         }
     }
 
