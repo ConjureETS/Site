@@ -142,7 +142,7 @@ section#activites {
 
     .sub-section {
         position: relative;
-        transition: all 2s;
+        transition: transform 2s;
 
         div.no-spacing {
             margin: 0;
@@ -195,7 +195,7 @@ section#activites {
         div.headline {
             margin-top: 75px;
             padding: 25px;
-            transition: all 0.25s;
+            transition: display 0.25s;
             position: absolute;
             color: white;
             max-width: 35%;
@@ -222,7 +222,7 @@ section#activites {
 
         .bg-img {
             position: absolute;
-            transition: all 2s;
+            transition: transform 2s;
 
             &.gala-img {
                 background-image: url('../img/gala.jpg');
