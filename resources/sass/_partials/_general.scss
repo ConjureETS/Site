@@ -95,6 +95,8 @@ section#apropos {
             height: 600px;
             width: 500px;
             border: 1px solid lightgray;
+            border-top-left-radius: $border-radius;
+            border-top-right-radius: $border-radius;
         }
 
         address {
@@ -104,6 +106,8 @@ section#apropos {
             font-size: 0.8rem;
             text-align: left;
             border: 1px solid lightgray;
+            border-bottom-left-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
             max-width: 500px;
             position: relative;
             top: -10px;
@@ -305,6 +309,14 @@ section#competitions {
             .slider-item {
                 text-align: center;
             }
+        }
+    }
+}
+
+section#partenaires {
+    .grid {
+        img {
+            height: 100%;
         }
     }
 }
