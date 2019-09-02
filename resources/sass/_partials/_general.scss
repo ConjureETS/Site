@@ -1,3 +1,5 @@
+$border-radius: 4px;
+
 * {
     font-family: Roboto, SansSerif;
 }
@@ -55,6 +57,7 @@ section#splashscreen {
 
     .bg-img {
         background-image: url('../img/splashscreen.jpg');
+        background-size: cover;
     }
 
     .splashscreen-text-container {
@@ -74,7 +77,7 @@ section#splashscreen {
             margin-right: auto;
             border-top: 5px solid white;
             max-width: 900px;
-            border-radius: 20px;
+            border-radius: $border-radius;
         }
     }
 }
@@ -108,6 +111,7 @@ section#apropos {
 
         img.is-quarter {
             width: 25%;
+            border-radius: $border-radius;
         }
 
         .column {
@@ -136,6 +140,11 @@ section#activites {
         position: relative;
         transition: all 2s;
 
+        div.no-spacing {
+            margin: 0;
+            padding: 0;
+        }
+
         &.slide {
             &:not(.animation-inversed) {
                 transform: translateX(25%);
@@ -154,15 +163,16 @@ section#activites {
 
         &.animation-inversed {
             div.content {
-                right: - 25%;
+                right: -25%;
             }
         }
 
         div.content {
-            position: absolute;
+            position: relative;
             padding: 25px;
             text-align: justify;
-            overflow-y: hidden;
+            overflow-y: auto;
+            top: 0;
 
             p, img {
                 margin-bottom: 1em;
@@ -174,6 +184,7 @@ section#activites {
                 left: 20%;
                 width: 60%;
                 text-align: center;
+                border-radius: $border-radius;
             }
         }
 
@@ -184,7 +195,7 @@ section#activites {
             position: absolute;
             color: white;
             max-width: 35%;
-            border-radius: 4px;
+            border-radius: $border-radius;
             background-color: rgba(0, 0, 0, 0.5);
 
             &:not(.is-headline-inversed) {
@@ -252,7 +263,7 @@ section#competitions, section#partenaires {
         margin: 10px auto 50px auto;
         border-top: 5px solid #848484;
         max-width: 200px;
-        border-radius: 20px;
+        border-radius: $border-radius;
     }
 }
 
@@ -278,17 +289,17 @@ section#competitions {
             }
 
             .slider-navigation-previous {
-                border-top-left-radius: 0px;
-                border-bottom-left-radius: 0px;
-                border-top-right-radius: 8px;
-                border-bottom-right-radius: 8px;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: $border-radius;
+                border-bottom-right-radius: $border-radius;
             }
 
             .slider-navigation-next {
-                border-top-left-radius: 8px;
-                border-bottom-left-radius: 8px;
-                border-top-right-radius: 0px;
-                border-bottom-right-radius: 0px;
+                border-top-left-radius: $border-radius;
+                border-bottom-left-radius: $border-radius;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
             }
 
             .slider-item {

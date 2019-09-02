@@ -9,19 +9,19 @@ $open-distance: 105px;
 $opening-angle: $pi*2;
 $hamburger-spacing: 10px;
 $default-opacity: 0.70;
-$ball-spacing: 72px;
+$item-spacing: 64px;
 
-%ball {
+%item {
     background: $fg;
-    border-radius: 100%;
-    width: 60px;
-    height: 60px;
-    margin-left: -20px;
+    border-radius: 4px;
+    width: 52px;
+    height: 52px;
+    margin-left: -16px;
     position: absolute;
     top: 20px;
     color: white;
     text-align: center;
-    line-height: 60px;
+    line-height: 52px;
     transform: translate3d(0, 0, 0);
     transition: transform ease-out 200ms;
     opacity: $default-opacity;
@@ -29,11 +29,11 @@ $ball-spacing: 72px;
     img {
         width: 42px;
         height: 42px;
-        margin: 9px;
+        margin: 5px;
     }
 }
 
-%ball-hover {
+%item-hover {
     opacity: 1;
 }
 
@@ -53,7 +53,7 @@ $ball-spacing: 72px;
     }
 
     .menu-item, .menu-item-always-open {
-        @extend %ball;
+        @extend %item;
         opacity: 0;
         transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
 
@@ -67,10 +67,10 @@ $ball-spacing: 72px;
     @for $i from 1 through $menu-items-always-open {
         .menu-item-always-open:nth-of-type(#{$i+3}) {
             opacity: $default-opacity;
-            top: 20px + $ball-spacing*$i;
+            top: 20px + $item-spacing*$i;
 
             &:hover {
-                @extend %ball-hover;
+                @extend %item-hover;
             }
         }
     }
@@ -120,7 +120,7 @@ $ball-spacing: 72px;
     }
 
     .menu-open-button {
-        @extend %ball;
+        @extend %item;
         z-index: 2;
         transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
         transition-duration: 400ms;
@@ -128,7 +128,7 @@ $ball-spacing: 72px;
         cursor: pointer;
 
         &:hover {
-            @extend %ball-hover;
+            @extend %item-hover;
             transform: scale(1.1, 1.1) translate3d(0, 0, 0);
         }
     }
@@ -143,7 +143,7 @@ $ball-spacing: 72px;
         opacity: $default-opacity;
 
         &:hover {
-            @extend %ball-hover;
+            @extend %item-hover;
         }
     }
 
@@ -151,14 +151,14 @@ $ball-spacing: 72px;
         @for $i from 1 through $menu-items {
             &:nth-child(#{$i+2}) {
                 transition-duration: 90ms+(100ms*$i);
-                transform: translate3d(0, $ball-spacing*$i, 0);
+                transform: translate3d(0, $item-spacing*$i, 0);
             }
         }
     }
 
     .menu-open:checked ~ .menu-item-always-open {
         transition-duration: 90ms+(100ms);
-        transform: translate3d(0, $ball-spacing*$menu-items, 0);
+        transform: translate3d(0, $item-spacing*$menu-items, 0);
     }
 
     .language-icon {
@@ -173,15 +173,15 @@ $ball-spacing: 72px;
         span {
             display: none;
             background: $fg;
-            border-top-left-radius: 60px;
-            border-bottom-left-radius: 60px;
-            height: 60px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            height: 52px;
             position: absolute;
-            right: 30px;
-            padding: 0 35px 0 25px;
+            right: 25px;
+            padding: 0 30px 0 15px;
             text-align: center;
             white-space: nowrap;
-            line-height: 60px;
+            line-height: 52px;
             z-index:-1;
         }
 

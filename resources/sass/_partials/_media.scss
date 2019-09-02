@@ -140,7 +140,12 @@
     }
 
     section#activites {
+        height: auto;
+
         .sub-section {
+            min-height: 100vh;
+            height: auto;
+
             div.headline {
                 max-width: 75% !important;
                 background-color: rgba(0, 0, 0, 0.75);
@@ -148,24 +153,31 @@
 
             &.slide {
                 &:not(.animation-inversed) {
-                    transform: translateX(75%);
+                    transform: translateX(0%);
                 }
 
                 &.animation-inversed {
-                    transform: translateX(-75%);
+                    transform: translateX(0%);
                 }
             }
 
             &:not(.animation-inversed) {
                 div.content {
-                    left: -75%;
+                    left: 0;
                 }
             }
 
             &.animation-inversed {
                 div.content {
-                    right: -75%;
+                    right: 0;
                 }
+            }
+
+            div.content {
+                height: auto;
+                width: 100vw;
+                padding-right: 2rem;
+                padding-left: 2rem;
             }
         }
     }

@@ -28,8 +28,8 @@ function addCopyrightCurrentDate() {
 }
 
 function showActivityContent(e) {
-    e.target.parentElement.parentElement.querySelector('.headline').classList.toggle('toggle-visibility');
-    e.target.parentElement.parentElement.classList.toggle('slide');
+    e.target.parentElement.parentElement.parentElement.querySelector('.headline').classList.toggle('toggle-visibility');
+    e.target.parentElement.parentElement.parentElement.classList.toggle('slide');
 }
 
 function pad(n, width, z) {
