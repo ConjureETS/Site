@@ -112,6 +112,10 @@
     section#competitions, section#partenaires {
         padding: 2rem 0.5rem;
 
+        .slider.column {
+            margin-left: 10%;
+        }
+
         .border-seperator {
             border-top-width: 2px;
         }
