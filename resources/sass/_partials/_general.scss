@@ -40,7 +40,7 @@ header.logo-container {
     filter: brightness(60%);
 }
 
-section {
+section, footer {
     h2 {
         font-size: 3rem;
         font-weight: bold;
@@ -89,29 +89,6 @@ section#apropos {
 
     .column .columns {
         margin-top: 50px;
-
-        embed, iframe {
-            margin-top: 1rem;
-            height: 600px;
-            width: 500px;
-            border: 1px solid lightgray;
-            border-top-left-radius: $border-radius;
-            border-top-right-radius: $border-radius;
-        }
-
-        address {
-            background: white;
-            padding: 10px;
-            margin: 0 auto;
-            font-size: 0.8rem;
-            text-align: left;
-            border: 1px solid lightgray;
-            border-bottom-left-radius: $border-radius;
-            border-bottom-right-radius: $border-radius;
-            max-width: 500px;
-            position: relative;
-            top: -10px;
-        }
 
         img.is-quarter {
             width: 25%;
@@ -321,11 +298,48 @@ section#partenaires {
     }
 }
 
+.sub-section-contact {
+    text-align: center;
+
+    .border-seperator {
+        margin: 10px auto 25px auto;
+        border-top: 5px solid #848484;
+        max-width: 200px;
+        border-radius: $border-radius;
+    }
+
+    embed, iframe {
+        margin-top: 1rem;
+        height: 600px;
+        width: 500px;
+        border: 1px solid lightgray;
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+    }
+
+    address {
+        background: white;
+        padding: 10px;
+        font-size: 0.8rem;
+        text-align: left !important;
+        border: 1px solid lightgray;
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        max-width: 500px;
+        position: relative;
+        top: -10px;
+        margin: 0 auto;
+    }
+}
+
 footer {
-    margin-top: 4.5rem;
-    padding: 15px 0;
+    .sub-section-contact {
+        padding-top: 3.5rem;
+    }
 
     p {
+        padding: 15px 0;
+        margin-top: 0.5rem;
         text-align: center;
     }
 }
