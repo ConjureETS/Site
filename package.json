@@ -1,0 +1,37 @@
+{
+  "name": "Conjure-Site",
+  "version": "1.0.0",
+  "description": "Site web officiel du club Conjure de l'ÉTS",
+  "main": "index.js",
+  "dependencies": {
+    "bulma-carousel": "^4.0.4"
+  },
+  "devDependencies": {
+    "bulma": "^0.7.5",
+    "fibers": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.12.0",
+    "sass": "^1.20.1",
+    "uglify-es": "^3.3.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConjureETS/Site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConjureETS/Site/issues"
+  },
+  "homepage": "https://github.com/ConjureETS/Site#readme"
+}

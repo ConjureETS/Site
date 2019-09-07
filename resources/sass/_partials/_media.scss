@@ -1,0 +1,195 @@
+@media only screen and (max-width: 1408px) {
+    section#activites {
+        div.headline {
+            max-width: 50% !important;
+        }
+
+        .sub-section {
+            &.slide {
+                &:not(.animation-inversed) {
+                    transform: translateX(40%);
+                }
+
+                &.animation-inversed {
+                    transform: translateX(-40%);
+                }
+            }
+
+            &:not(.animation-inversed) {
+                div.content {
+                    left: -40%;
+                }
+            }
+
+            &.animation-inversed {
+                div.content {
+                    right: -40%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    header.logo-container {
+        img {
+            width: 75%;
+        }
+    }
+
+    section#splashscreen {
+        .splashscreen-text-container {
+            top: 40%;
+            font-size: 3.5rem;
+
+            .border-seperator {
+                border-top-width: 4px;
+                max-width: 680px;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    section#competitions, section#partenaires {
+        .border-seperator {
+            border-top-width: 4px;
+        }
+    }
+
+    section {
+        h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            font-weight: bold;
+        }
+    }
+
+    section#activites {
+        .sub-section {
+            &.slide {
+                &:not(.animation-inversed) {
+                    transform: translateX(50%);
+                }
+
+                &.animation-inversed {
+                    transform: translateX(-50%);
+                }
+            }
+
+            &:not(.animation-inversed) {
+                div.content {
+                    left: -50%;
+                }
+            }
+
+            &.animation-inversed {
+                div.content {
+                    right: -50%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header.logo-container {
+        img {
+            width: 50%;
+            padding-top: 0.75rem;
+        }
+    }
+
+    section#splashscreen {
+        .splashscreen-text-container {
+            top: 40%;
+            font-size: 2.5rem;
+
+            .border-seperator {
+                border-top: 2px solid white;
+                max-width: 380px;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    section#competitions, section#partenaires {
+        padding: 2rem 0.5rem;
+
+        .slider.column {
+            margin-left: 10%;
+        }
+
+        .border-seperator {
+            border-top-width: 2px;
+        }
+
+        .grid {
+            img {
+                float: left;
+            }
+        }
+    }
+
+    section {
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+
+    section#activites {
+        height: auto;
+
+        .sub-section {
+            min-height: 100vh;
+            height: auto;
+
+            div.headline {
+                max-width: 75% !important;
+                background-color: rgba(0, 0, 0, 0.75);
+            }
+
+            &.slide {
+                &:not(.animation-inversed) {
+                    transform: translateX(0%);
+                }
+
+                &.animation-inversed {
+                    transform: translateX(0%);
+                }
+            }
+
+            &:not(.animation-inversed) {
+                div.content {
+                    left: 0;
+                }
+            }
+
+            &.animation-inversed {
+                div.content {
+                    right: 0;
+                }
+            }
+
+            div.content {
+                height: auto;
+                width: 100vw;
+                padding-right: 2rem;
+                padding-left: 2rem;
+            }
+        }
+    }
+
+    footer {
+        clear: both;
+    }
+}
