@@ -154,9 +154,18 @@
             height: auto;
 
             div.headline {
-                max-width: 75% !important;
+                max-width: 90% !important;
                 background-color: rgba(0, 0, 0, 0.75);
+
+                &:not(.is-headline-inversed) {
+                    left: 25px !important;
+                }
+
+                &.is-headline-inversed {
+                    right: 25px !important;
+                }
             }
+
 
             &.slide {
                 &:not(.animation-inversed) {
