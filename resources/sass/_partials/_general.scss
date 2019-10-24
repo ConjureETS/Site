@@ -1,7 +1,7 @@
 $border-radius: 4px;
 
 * {
-    font-family: Roboto, SansSerif;
+    font-family: Roboto, sans-serif;
 }
 
 body {
@@ -291,10 +291,8 @@ section#competitions {
 }
 
 section#partenaires {
-    .grid {
-        img {
-            height: 100%;
-        }
+    .grid.is-multiline {
+        display:flex;
     }
 }
 
