@@ -16,3 +16,5 @@ Site web officiel du club Conjure de l'ÉTS
 ## Compilation (Local)
 Lorsque vous faites des changements dans le JavaScript ou le SASS, lancez la commande de commande `gulp watch`.
 Celui-ci regardera les changements fait au fur et à mesure et compilera les fichiers pour vous.
+
+J'ai dû utiliser Node 14 pour que ça fonctionne en 2025 --t
