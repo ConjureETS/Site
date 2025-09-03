@@ -3,7 +3,7 @@ $fg: #115FA2;
 $pi: 3.14;
 
 //config
-$menu-items: 3;
+$menu-items: 6;
 $menu-items-always-open: 3;
 $open-distance: 105px;
 $opening-angle: $pi*2;
@@ -30,6 +30,11 @@ $item-spacing: 64px;
         width: 42px;
         height: 42px;
         margin: 5px;
+    }
+
+    img.icon-32 {
+        width: 32px;
+        height: 32px;
     }
 }
 
@@ -65,7 +70,7 @@ $item-spacing: 64px;
     }
 
     @for $i from 1 through $menu-items-always-open {
-        .menu-item-always-open:nth-of-type(#{$i+3}) {
+        .menu-item-always-open:nth-of-type(#{$i+$menu-items}) {
             opacity: $default-opacity;
             top: 20px + $item-spacing*$i;
 
@@ -191,5 +196,12 @@ $item-spacing: 64px;
             }
         }
     }
+}
+
+.icon-centerer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
