@@ -1,0 +1,46 @@
+---
+interface Props {
+  id: string;
+  title: string;
+  image: string;
+  description?: string;
+  content?: string;
+  logo?: string;
+  cta?: string;
+  ctaLink?: string;
+  isInversed?: boolean;
+}
+
+const { id, title, image, description, content, logo, cta, ctaLink, isInversed = false } = Astro.props;
+---
+
+<div class={`full-height full-width columns is-full sub-section ${isInversed ? 'animation-inversed' : ''}`}>
+  {!isInversed && <div class="bg-img full-height full-width" style={`background-image: url('${image}');`}></div>}
+
+  {!isInversed ? (
+    <div class="headline">
+      <h2>{title}</h2>
+      <p>{description}</p>
+      {cta && ctaLink && (
+        <a href={ctaLink}>
+          <button class={`button is-${id}-btn is-info is-outlined is-medium`}>{cta}</button>
+        </a>
+      )}
+    </div>
+  ) : (
+    <>
+      <div class="column full-height no-spacing">
+        <div class="bg-img full-height full-width" style={`background-image: url('${image}');`}></div>
+        <div class="headline is-headline-inversed">
+          <h2>{title}</h2>
+          <p>{description}</p>
+          <button class={`button is-${id}-btn is-info is-hidden-mobile is-outlined is-medium`}>En savoir plus</button>
+        </div>
+      </div>
+      <div class="content column is-one-quarter-fullhd is-two-fifths-desktop is-half-tablet is-three-quarters-mobile full-height">
+        {logo && <img alt={`${title} Logo`} src={logo} />}
+        {content && <p>{content}</p>}
+      </div>
+    </>
+  )}
+</div>

@@ -1,0 +1,25 @@
+---
+import { partners } from '../data/partners';
+---
+
+<section class="section" id="partenaires">
+  <h2>Partenaires</h2>
+  <div class="border-seperator"></div>
+  <div class="columns is-full full-width sub-section is-centered">
+    <div class="imq-section column is-two-fifths is-8-tablet is-full-mobile">
+      <div class="grid columns is-multiline">
+        {
+          partners.map((partner) => (
+            <a
+              class="column is-one-third-widescreen is-one-third-desktop is-one-third-tablet is-half-mobile"
+              target="_blank"
+              href={partner.url}
+            >
+              <img src={partner.logo} alt={`Logo ${partner.name}`} />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

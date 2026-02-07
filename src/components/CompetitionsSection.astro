@@ -1,0 +1,28 @@
+---
+import { competitions } from '../data/competitions';
+---
+
+<section class="section" id="competitions">
+  <h2>Compétitions</h2>
+  <div class="border-seperator"></div>
+  <div class="columns is-centered">
+    <div class="slider column is-three-fifths-tablet is-four-fifths-mobile">
+      {
+        competitions.map((competition) => (
+          <div class="slider-item">
+            <img src={competition.image} alt={`Logo ${competition.name}`} />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  import { initCarousel } from '../scripts/app';
+  
+  // Small delay to ensure DOM is fully ready
+  setTimeout(() => {
+    initCarousel();
+  }, 100);
+</script>
