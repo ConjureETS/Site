@@ -1,25 +1,162 @@
 ---
-import { partners } from '../data/partners';
+import { goldPartners, silverPartners, bronzePartners } from '../data/partners';
 ---
 
 <section class="section" id="partenaires">
   <h2>Partenaires</h2>
   <div class="border-seperator"></div>
-  <div class="columns is-full full-width sub-section is-centered">
-    <div class="imq-section column is-two-fifths is-8-tablet is-full-mobile">
-      <div class="grid columns is-multiline">
-        {
-          partners.map((partner) => (
-            <a
-              class="column is-one-third-widescreen is-one-third-desktop is-one-third-tablet is-half-mobile"
-              target="_blank"
-              href={partner.url}
-            >
-              <img src={partner.logo} alt={`Logo ${partner.name}`} />
-            </a>
-          ))
-        }
+
+  {goldPartners.length > 0 && (
+    <div class="gold-tier">
+      <h3 class="tier-title gold-title">Gold</h3>
+      <div class="columns is-centered">
+        <div class="column is-half-tablet is-full-mobile">
+          <div class="gold-partners">
+            {
+              goldPartners.map((partner) => (
+                <a
+                  class="gold-partner-card"
+                  target="_blank"
+                  href={partner.url}
+                >
+                  <img src={partner.logo} alt={`Logo ${partner.name}`} class="gold-logo" />
+                  <p class="partner-description">{partner.description}</p>
+                </a>
+              ))
+            }
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  )}
+
+  <div class="silver-tier">
+    <h3 class="tier-title silver-title">Silver</h3>
+      <div class="columns is-centered">
+        <div class="column is-two-thirds">
+          <div class="silver-partners columns is-multiline is-centered">
+            {
+              silverPartners.map((partner) => (
+                <a
+                  class="column is-one-third-widescreen is-one-third-desktop is-one-third-tablet is-half-mobile silver-partner-card"
+                  target="_blank"
+                  href={partner.url}
+                >
+                  <img src={partner.logo} alt={`Logo ${partner.name}`} class="silver-logo" />
+                  {partner.description && <h4>{partner.name}</h4>}
+                  {partner.description && <p class="partner-description">{partner.description}</p>}
+                </a>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bronze-tier">
+      <h3 class="tier-title bronze-title">Bronze</h3>
+      <div class="columns is-centered">
+        <div class="column is-two-thirds">
+          <div class="bronze-partners columns is-multiline is-centered">
+            {
+              bronzePartners.map((partner) => (
+                <a
+                  class="column is-one-third-widescreen is-one-third-desktop is-one-third-tablet is-half-mobile bronze-partner-card"
+                  target="_blank"
+                  href={partner.url}
+                >
+                  <img src={partner.logo} alt={`Logo ${partner.name}`} class="bronze-logo" />
+                </a>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
 </section>
+
+<style>
+  .gold-tier {
+    margin-bottom: 3rem;
+  }
+
+  .gold-partner-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .gold-partner-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .gold-logo {
+    max-width: 420px;
+    max-height: 420px;
+    margin-bottom: 1rem;
+  }
+
+  .gold-partner-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .partner-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #666;
+  }
+
+  .silver-logo {
+    max-width: 320px;
+    max-height: 320px;
+  }
+
+  .bronze-logo {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .bronze-partner-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+  }
+
+  /* .bronze-partner-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  } */
+
+  .tier-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .gold-title {
+    color: #d4af37;
+  }
+
+  .silver-title {
+    color: #c0c0c0;
+  }
+
+  .bronze-title {
+    color: #cd7f32;
+  }
+</style>
