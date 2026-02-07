@@ -1,0 +1,22 @@
+---
+interface Props {
+  startYear?: number;
+  endYear?: 'current' | number;
+}
+
+const { startYear = 2009, endYear = 'current' } = Astro.props;
+const displayEndYear = endYear === 'current' ? new Date().getFullYear() : endYear;
+---
+
+<section class="section full-height" id="splashscreen">
+  <div class="bg-img full-height full-width"></div>
+  <div class="splashscreen-text-container full-width">
+    <h1>Laboratoire de médias interactifs</h1>
+    <div class="border-seperator"></div>
+    <h2>
+      <span class="year-animated" data-endvalue={startYear}>{String(startYear).padStart(4, '0')}</span>
+      {' - '}
+      <span class="year-animated" data-delay="750">{String(displayEndYear).padStart(4, '0')}</span>
+    </h2>
+  </div>
+</section>
