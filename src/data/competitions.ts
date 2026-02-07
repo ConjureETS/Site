@@ -1,7 +1,7 @@
 export const competitions = [
   {
     name: 'Creative Jam',
-    image: '/img/competitions/CreativeJam.png',
+    image: '/img/competitions/CreativeJam.webp',
   },
   {
     name: 'Concours Universitaire Ubisoft',
@@ -16,11 +16,15 @@ export const competitions = [
     image: '/img/competitions/McGameJam.png',
   },
   {
-    name: 'Pixel Challenge Québec',
-    image: '/img/competitions/PixelChallenge.png',
-  },
-  {
-    name: 'Game Jam Battle',
-    image: '/img/competitions/GameJamBattle.png',
-  },
+    name: 'GMTK Game Jam',
+    image: '/img/competitions/GMTK.png',
+  }
+  // {
+  //   name: 'Pixel Challenge Québec',
+  //   image: '/img/competitions/PixelChallenge.png',
+  // },
+  // {
+  //   name: 'Game Jam Battle',
+  //   image: '/img/competitions/GameJamBattle.png',
+  // },
 ];

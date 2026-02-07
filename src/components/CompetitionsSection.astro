@@ -6,10 +6,10 @@ import { competitions } from '../data/competitions';
   <h2>Compétitions</h2>
   <div class="border-seperator"></div>
   <div class="columns is-centered">
-    <div class="slider column is-three-fifths-tablet is-four-fifths-mobile">
+    <div class="slider column is-three-fifths-tablet is-four-fifths-mobile carousel">
       {
         competitions.map((competition) => (
-          <div class="slider-item">
+          <div class="slider-item" style="padding: 0 1rem;">
             <img src={competition.image} alt={`Logo ${competition.name}`} />
           </div>
         ))
