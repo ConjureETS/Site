@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/base/_all.sass";
+@import "bulma/sass/grid/columns.sass";
+@import "bulma/sass/layout/section.sass";
+@import "bulma/sass/elements/button.sass";
+@import "bulma-carousel/src/sass/index.sass";
+
+// Disable the widescreen breakpoint
+$widescreen-enabled: false;
+
+// Disable the fullhd breakpoint
+$fullhd-enabled: false;
+
+@import "./_partials/general";
+@import "./_partials/navigation";
+@import "./_partials/media";

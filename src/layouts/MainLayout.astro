@@ -1,0 +1,33 @@
+---
+import '../styles/main.scss';
+
+interface Props {
+  title?: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="site web du club conjure de l'école de technologie supérieure ÉTS à Montréal" />
+    <meta name="keywords" content="Conjure, Laboratoire de médias interactifs, Club Conjure, ÉTS, École de technologie supérieure, jeu vidéo, médias interactifs" />
+    <meta name="author" content="Club Conjure" />
+    <title>{title || 'Club Conjure'}</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+  </head>
+  <body>
+    <slot />
+    <script>
+      import { initApp } from '../scripts/app';
+      initApp();
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+</style>

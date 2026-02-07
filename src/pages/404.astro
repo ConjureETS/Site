@@ -1,0 +1,25 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<MainLayout title="404 - Page non trouvée">
+  <Navigation />
+
+  <main>
+    <section class="section full-height" id="error-404">
+      <div class="bg-img full-height full-width"></div>
+      <div class="splashscreen-text-container full-width error">
+        <h1>404</h1>
+        <div class="border-seperator"></div>
+        <h2>Page non trouvée</h2>
+        <p style="font-size: 1.5rem; margin-top: 2rem;">
+          <a href="/" style="color: white; text-decoration: underline;">Retourner à l'accueil</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</MainLayout>
