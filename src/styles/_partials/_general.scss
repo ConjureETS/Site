@@ -56,7 +56,7 @@ section#splashscreen {
     padding: 0 !important;
 
     .bg-img {
-        background-image: url('../img/splashscreen.jpg');
+        background-image: url('/img/splashscreen.jpg');
         background-size: cover;
     }
 
@@ -213,11 +213,11 @@ section#activites {
             transition: transform 2s;
 
             &.gala-img {
-                background-image: url('../img/gala.jpg');
+                background-image: url('/img/gala.jpg');
             }
 
             &.mtlgj-img {
-                background-image: url('../img/mtlgj.jpg');
+                background-image: url('/img/mtlgj.jpg');
             }
         }
 
@@ -353,5 +353,44 @@ footer {
         padding: 15px 0;
         margin-top: 0.5rem;
         text-align: center;
+    }
+}
+
+// Error pages styling (404, 500)
+section#error-404,
+section#error-500 {
+    padding: 0 !important;
+
+    .bg-img {
+        background-image: url('/img/splashscreen.jpg');
+        background-size: cover;
+    }
+
+    .splashscreen-text-container {
+        position: absolute;
+        top: 40%;
+        text-align: center;
+        color: white;
+        font-size: 4.5rem;
+        padding: 1rem 2rem 2rem 1rem;
+        background-color: rgba(0, 0, 0, 0.6);
+
+        h1 {
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+
+        .border-seperator {
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-top: 5px solid white;
+            max-width: 900px;
+            border-radius: $border-radius;
+        }
     }
 }
