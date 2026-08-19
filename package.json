@@ -4,12 +4,12 @@
   "description": "Site web officiel du club Conjure de l'ÉTS",
   "type": "module",
   "dependencies": {
-    "bulma-carousel": "^4.0.4",
     "bulma": "^0.7.5",
+    "bulma-carousel": "^4.0.4",
     "sass": "^1.58.0"
   },
   "devDependencies": {
-    "astro": "^4.0.0"
+    "astro": "^7.2.3"
   },
   "scripts": {
     "dev": "astro dev",
