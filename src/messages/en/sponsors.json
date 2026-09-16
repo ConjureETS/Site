@@ -8,12 +8,6 @@
       "key": "or",
       "label": "Gold",
       "colorVar": "tier-gold",
-      "sponsors": []
-    },
-    {
-      "key": "argent",
-      "label": "Silver",
-      "colorVar": "tier-silver",
       "sponsors": [
         {
           "name": "Ubisoft Montreal",
@@ -22,6 +16,12 @@
           "description": "Ubisoft is a global leader in video game entertainment. By supporting us, they share their unparalleled expertise and enable us to organize our events every year. Thanks to their support, we create an environment where developers and creatives can explore their ideas and bring their visions to life."
         }
       ]
+    },
+    {
+      "key": "argent",
+      "label": "Silver",
+      "colorVar": "tier-silver",
+      "sponsors": []
     },
     {
       "key": "bronze",

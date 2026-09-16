@@ -8,12 +8,6 @@
       "key": "or",
       "label": "Or",
       "colorVar": "tier-gold",
-      "sponsors": []
-    },
-    {
-      "key": "argent",
-      "label": "Argent",
-      "colorVar": "tier-silver",
       "sponsors": [
         {
           "name": "Ubisoft Montréal",
@@ -22,6 +16,12 @@
           "description": "Ubisoft est un leader mondial du divertissement vidéoludique. En nous supportant, ils nous font profiter de leur expertise incomparable et nous permettent d'organiser nos événements chaque année. Grâce à leur soutien, nous créons un environnement où les développeurs et créatifs peuvent explorer leurs idées et donner vie à leurs visions."
         }
       ]
+    },
+    {
+      "key": "argent",
+      "label": "Argent",
+      "colorVar": "tier-silver",
+      "sponsors": []
     },
     {
       "key": "bronze",
