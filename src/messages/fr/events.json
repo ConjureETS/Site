@@ -1,0 +1,38 @@
+{
+  "eyebrow": "Activités",
+  "title": "Événements",
+  "description": "Nos rencontres, notre gala annuel et les moments forts de la communauté Conjure.",
+  "emptyText": "Pas d'événement à afficher pour le moment. Revenez bientôt !",
+  "items": [
+    {
+      "name": "Montreal Game Jam Test",
+      "date": "22/05/2026 au 24/05/2026",
+      "location": "ÉTS",
+      "description": "La Montréal Game Jam était autrefois une des plus grande Game Jam en présentiel, mais depuis la Covid cet évènement était en pause. \n\nDans le but de ramener cet évènement, Conjure a organisé un Game Jam de test gratuite avec un nombre de participant réduit.\n\nCet nouvelle version du Montréal Game Jam de Conjure propose :\n\nNouveau format de thème et de défis\nGame Jam au format de Lan, tous les participants sont regroupés dans la meme salle\n\nUn immense merci à tou·te·s les participant·e·s du Montréal Game Jam Test. Cette édition marquait le retour de cet évènement et nous sommes ravi·e·s d’avoir réuni autant de talents passionné·e·s de jeu vidéo.\n\nDes étudiant·e·s provenant de plusieurs clubs de création de jeux vidéos d'universités montréalaises ont relevé le défi en créant des jeux sur le thème de l’apocalypse en moins de trois jours!\n\nUn merci tout particulier à notre formidable équipe organisatrice : Ader Alisma, Chris Mathevet, Laura Bascopé Butron, Maurice Elkouby et Romain Boade dont leur travail ont permis de faire de cet événement un véritable succès.\n\nMerci à l’École de technologie supérieure (ETS) , qui nous a permis d’utiliser des locaux de classe afin que les participant·e·s puissent travailler sur leurs jeux dans de bonnes conditions.\n\nUn gros merci à notre sponsor Ubisoft Montréal, qui a offert des prix à nos grands gagnant·e·s.\n\nVous pouvez dès maintenant découvrir et jouer aux jeux créés pendant la Game Jam ici : https://lnkd.in/eDjsTxXr",
+      "images": [
+        "/events/gamejam_test.png"
+      ]
+    },
+    {
+      "name": "Student Game Dev Summit (1ère édition)",
+      "date": "02/05/2026",
+      "location": "ÉTS, Pavillon E, Salle des diplômés",
+      "description": "Le Student Game Dev Summit est un événement organisé conjointement par GameDev McGill, Concordia Game Development, Nad C.U.B.E, CJD - Université Laval et Conjure.\n\nCette soirée permet aux membres des différents clubs de création de jeux vidéo de Montréal et des environs de se rencontrer, d’échanger et surtout de découvrir les jeux développés par les étudiants. \n\nAu delà des projets présentés, cet événement marque le début d’une collaboration durable entre les communautés étudiantes en développement de jeux de la région. \n\nUn immense merci à l’École de technologie supérieure (ETS) de nous avoir accueillis dans le Salon des diplômés pour cette première édition.\n\nMerci également à Loïc Beaudin-Kerzérho et Soro Nahouo Ouodio Abdul-Rahim du club Exutoire de l’ETS ainsi qu’à Tommy Cao pour les photos et leur contribution à l’événement.",
+      "images": [
+        "/events/gamedev_summit_1.png",
+        "/events/gamedev_summit_2.png",
+        "/events/gamedev_summit_3.png",
+        "/events/gamedev_summit_4.png"
+      ]
+    },
+    {
+      "name": "Gala Conjure 2025",
+      "date": "16/10/2025",
+      "location": "ÉTS, Pavillon E, Salle des diplômés",
+      "description": "Gala annuel pour présenter les projets des membres créés lors de la dernière année. L'événement se présente sous forme de 5 à 8 où les gens du domaine du jeu vidéo sont invités à venir voir les efforts mis par la relève.",
+      "images": [
+        "/events/20250116-_MG_9724.jpg"
+      ]
+    }
+  ]
+}

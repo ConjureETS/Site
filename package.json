@@ -1,31 +1,28 @@
 {
-  "name": "conjure-site",
-  "version": "1.0.0",
-  "description": "Site web officiel du club Conjure de l'ÉTS",
-  "type": "module",
+  "name": "conjure-site-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "preview": "next build --turbopack && next start",
+    "lint": "eslint",
+    "edit": "node tools/content-editor/server.js"
+  },
   "dependencies": {
-    "bulma": "^0.7.5",
-    "bulma-carousel": "^4.0.4",
-    "sass": "^1.58.0"
+    "embla-carousel-react": "^8.6.0",
+    "next": "15.5.4",
+    "next-intl": "^4.14.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
-    "astro": "^7.2.3"
-  },
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ConjureETS/Site.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ConjureETS/Site/issues"
-  },
-  "homepage": "https://github.com/ConjureETS/Site#readme"
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.4",
+    "tailwindcss": "^4"
+  }
 }

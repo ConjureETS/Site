@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens — single source of truth for the whole app.
+ * Tailwind v4 reads this @theme block directly, so every `--color-*`,
+ * `--font-*` etc. below becomes real utility classes (bg-primary,
+ * text-accent-400, font-display, ...). There is no tailwind.config.js
+ * anymore — don't add one back, it would just create a second place
+ * to edit colors and they'd drift out of sync.
+ *
+ * To change the palette club-wide: edit the values here only.
+ */
+@theme {
+    /* Brand — blue (primary, from the logo) */
+    --color-primary-300: #8ecdf2;
+    --color-primary-400: #58affe;
+    --color-primary: #2789ca;
+    --color-primary-600: #1f6da3;
+    --color-primary-700: #166789;
+    --color-primary-900: #0c3347;
+
+    /* Brand — violet (secondary accent, used sparingly) */
+    --color-accent-300: #c7b6fd;
+    --color-accent-400: #a78bfa;
+    --color-accent: #8b5cf6;
+    --color-accent-600: #7c3aed;
+    --color-accent-700: #6427c8;
+
+    /* Surfaces, darkest to lightest */
+    --color-bg: #07080b;
+    --color-surface: #0f111a;
+    --color-surface-2: #161927;
+    --color-surface-3: #1e2233;
+    --color-border: #ffffff1a;
+    --color-border-strong: #ffffff33;
+
+    /* Text */
+    --color-text: #eef0f6;
+    --color-text-muted: #9aa1b8;
+    --color-text-faint: #7d84a0;
+
+    /* Sponsor tiers */
+    --color-tier-gold: #e8b93f;
+    --color-tier-silver: #b9c0cf;
+    --color-tier-bronze: #c9814f;
+}
+
+/*
+ * Fonts are loaded by next/font in layout.js, which exposes them as
+ * the --font-inter / --font-chakra CSS variables on <body>. This
+ * block wires those into Tailwind's font-sans / font-display
+ * utilities — `@theme inline` (rather than plain @theme) so Tailwind
+ * references the variable instead of trying to inline its value.
+ */
+@theme inline {
+    --font-sans: var(--font-inter), "Open Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-display: var(--font-chakra), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+    font-size: 16px;
+    color-scheme: dark;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+* {
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s, opacity 0.2s;
+}
+
+img, picture, video, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button, a {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+/* Visible keyboard-focus ring, site-wide. One rule instead of adding
+   focus-visible classes to every interactive component by hand. */
+:focus-visible {
+    outline: 2px solid var(--color-primary-400);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/*
+ * Faint engineering-blueprint grid texture, used as flat, uniform
+ * decoration behind headers. Deliberately NOT faded/masked — a masked
+ * fade landing at an arbitrary point behind body text reads as a
+ * rendering glitch, not a design choice. Where an actual "fade into
+ * the page" is wanted, compose an explicit gradient div instead (see
+ * Hero and PageHeader) so its edge is placed on purpose.
+ */
+.bg-grid {
+    background-image:
+        linear-gradient(color-mix(in srgb, var(--color-primary) 12%, transparent) 1px, transparent 1px),
+        linear-gradient(90deg, color-mix(in srgb, var(--color-primary) 12%, transparent) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

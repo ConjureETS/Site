@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Conjure — Éditeur de contenu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-title">Éditeur de contenu Conjure</div>
+      <nav class="tabs" id="tabs">
+        <button class="tab" data-tab="sponsors">Commanditaires</button>
+        <button class="tab" data-tab="events">Événements</button>
+        <button class="tab" data-tab="games">Compétitions / jeux</button>
+        <button class="tab" data-tab="mediaKit">Kit média</button>
+      </nav>
+      <div class="savebar">
+        <span id="status" class="status"></span>
+        <button id="reloadBtn" class="btn btn-ghost">Recharger</button>
+        <button id="saveBtn" class="btn btn-primary">Enregistrer</button>
+      </div>
+    </header>
+
+    <main id="app"></main>
+
+    <template id="tpl-toast">
+      <div class="toast"></div>
+    </template>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

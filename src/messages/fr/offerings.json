@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "learn",
+    "title": "Apprendre",
+    "description": "Formations en programmation, en art et en design, ateliers Unreal Engine et accès aux conférences de l'industrie (MIGS) pour progresser à ton rythme."
+  },
+  {
+    "icon": "equipment",
+    "title": "Équipement",
+    "description": "Un local équipé de casques de réalité virtuelle et des outils de développement de jeux vidéo à la disposition de tous les membres."
+  },
+  {
+    "icon": "compete",
+    "title": "Compétitions",
+    "description": "Un accès privilégié aux concours et événements de l'industrie, et un réseau de professionnel·les du jeu vidéo à rencontrer."
+  }
+]

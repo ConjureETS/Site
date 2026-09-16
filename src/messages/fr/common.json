@@ -1,0 +1,33 @@
+{
+  "localeName": "Français",
+  "otherLocaleName": "English",
+  "skipToContent": "Passer au contenu principal",
+  "nav": {
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "contribute": "Contribuer"
+  },
+  "footer": {
+    "navigationHeading": "Navigation",
+    "contactHeading": "Nous joindre",
+    "rights": "Tous droits réservés."
+  },
+  "carousel": {
+    "previous": "Précédent",
+    "next": "Suivant"
+  },
+  "scrollToTop": "Retour en haut",
+  "backHome": "Retour à l'accueil",
+  "learnMore": "En savoir plus",
+  "error": {
+    "eyebrow": "Erreur",
+    "title": "Une erreur est survenue",
+    "description": "Désolé, quelque chose s'est mal passé de notre côté.",
+    "retry": "Essayer à nouveau"
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "Page non trouvée",
+    "description": "La page que vous cherchez n'existe pas ou plus."
+  }
+}

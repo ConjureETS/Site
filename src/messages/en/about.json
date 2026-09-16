@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Overview",
+  "title": "ÉTS's video game creation club",
+  "intro": "Conjure is a student club at École de technologie supérieure dedicated to video game creation. Since 2009, it has brought together programmers, artists, and designers around real projects, training, and a fully equipped room.",
+  "historyHeading": "Our history",
+  "history": "Founded in 2009, Conjure grew out of ÉTS students wanting to practice video game development outside the classroom. Over the years the club became a recognized name on the Montreal student scene, present at the Ubisoft Game Lab, the Montreal Game Jam, and its own annual gala.",
+  "membership": {
+    "title": "Become a member",
+    "description": "Conjure is open to every ÉTS student, regardless of program or experience level. No prior game development experience is required — just the drive to learn and create as a team.",
+    "benefits": [
+      "Access to the room and its equipment (VR, workstations, game engines)",
+      "Training and workshops led by members and industry professionals",
+      "Competition entries (Ubisoft Game Lab, game jams) as part of a team",
+      "Showcasing your projects at the annual Gala Conjure"
+    ]
+  },
+  "ctaTitle": "Ready to jump in?",
+  "ctaText": "Join the Discord to meet the team and hear about upcoming activities.",
+  "ctaButton": "Join the Discord"
+}
