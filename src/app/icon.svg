@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="6.2049346mm"
+   height="6.2049346mm"
+   viewBox="0 0 6.2049346 6.2049346"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1"><linearGradient
+       id="linearGradient16"><stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0.15000001"
+         id="stop16" /><stop
+         style="stop-color:#161351;stop-opacity:1;"
+         offset="1"
+         id="stop17" /></linearGradient><linearGradient
+       id="linearGradient4"><stop
+         style="stop-color:#2760ab;stop-opacity:1;"
+         offset="0"
+         id="stop4" /><stop
+         style="stop-color:#2789ca;stop-opacity:1;"
+         offset="1"
+         id="stop5" /></linearGradient><linearGradient
+       xlink:href="#linearGradient16"
+       id="linearGradient7"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-0.81138604,6.1530108)"
+       x1="73.780434"
+       y1="76.881065"
+       x2="75.902672"
+       y2="71.050255" /><linearGradient
+       xlink:href="#linearGradient4"
+       id="linearGradient8"
+       gradientUnits="userSpaceOnUse"
+       x1="82.815407"
+       y1="75.761253"
+       x2="83.704239"
+       y2="73.025719" /></defs><g
+     id="layer1"
+     transform="translate(-34.389934,-84.778549)"><g
+       id="g15-5"
+       transform="translate(-36.537766,7.7623437)"><circle
+         style="opacity:1;fill:url(#linearGradient7);fill-opacity:1;stroke:none;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+         id="path16-4"
+         cx="74.030167"
+         cy="80.118668"
+         r="3.1024671" /><path
+         style="display:inline;opacity:1;fill:url(#linearGradient8);fill-opacity:1;stroke:#ffffff;stroke-width:0.0605871;stroke-dasharray:none;stroke-opacity:1"
+         id="path15-9"
+         d="m 81.821628,74.847733 0.670191,-0.751119 -0.238812,-0.977909 0.921457,0.405281 0.85625,-0.529314 -0.1007,1.001597 0.768004,0.650775 -0.983694,0.213739 -0.381597,0.931515 -0.507256,-0.869499 z"
+         transform="matrix(1.6111837,-0.35817727,0.35817727,1.6111837,-86.657943,-9.8484362)" /></g></g></svg>

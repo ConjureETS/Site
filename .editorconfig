@@ -1,0 +1,18 @@
+# root = true indicates that this is the top-level EditorConfig file
+root = true
+
+# Global rules for all files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Rules for JavaScript, TypeScript, and JSX files
+[*.{js,jsx,ts,tsx}]
+indent_style = space
+indent_size = 2
+
+# Rules for Markdown files
+[*.md]
+trim_trailing_whitespace = false

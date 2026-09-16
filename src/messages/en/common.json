@@ -1,0 +1,33 @@
+{
+  "localeName": "English",
+  "otherLocaleName": "Français",
+  "skipToContent": "Skip to main content",
+  "nav": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "contribute": "Donate"
+  },
+  "footer": {
+    "navigationHeading": "Navigation",
+    "contactHeading": "Get in touch",
+    "rights": "All rights reserved."
+  },
+  "carousel": {
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "scrollToTop": "Back to top",
+  "backHome": "Back to home",
+  "learnMore": "Learn more",
+  "error": {
+    "eyebrow": "Error",
+    "title": "Something went wrong",
+    "description": "Sorry, something broke on our end.",
+    "retry": "Try again"
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist anymore."
+  }
+}

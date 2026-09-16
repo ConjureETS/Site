@@ -1,0 +1,19 @@
+[
+  { "label": "Accueil", "href": "/" },
+  {
+    "label": "À propos",
+    "items": [
+      { "label": "Présentation", "href": "/about" },
+      { "label": "Kit média", "href": "/media-kit" }
+    ]
+  },
+  {
+    "label": "Activités",
+    "items": [
+      { "label": "Événements", "href": "/events" },
+      { "label": "Compétitions", "href": "/games" }
+    ]
+  },
+  { "label": "Partenaires", "href": "/sponsors" },
+  { "label": "Contact", "href": "/contact" }
+]

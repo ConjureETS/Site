@@ -1,0 +1,50 @@
+{
+  "eyebrow": "Partners",
+  "title": "The organizations that make Conjure possible",
+  "description": "Training, equipment, events: our partners directly support our members' experience.",
+  "emptyTemplate": "Future {tier} partners will show up here!",
+  "tiers": [
+    {
+      "key": "or",
+      "label": "Gold",
+      "colorVar": "tier-gold",
+      "sponsors": []
+    },
+    {
+      "key": "argent",
+      "label": "Silver",
+      "colorVar": "tier-silver",
+      "sponsors": [
+        {
+          "name": "Ubisoft Montreal",
+          "logo": "/sponsors/ubisoft_montreal.png",
+          "url": "https://montreal.ubisoft.com/",
+          "description": "Ubisoft is a global leader in video game entertainment. By supporting us, they share their unparalleled expertise and enable us to organize our events every year. Thanks to their support, we create an environment where developers and creatives can explore their ideas and bring their visions to life."
+        }
+      ]
+    },
+    {
+      "key": "bronze",
+      "label": "Bronze",
+      "colorVar": "tier-bronze",
+      "sponsors": [
+        {
+          "name": "ÉTS",
+          "logo": "/sponsors/ets.png",
+          "url": "https://www.etsmtl.ca/"
+        },
+        {
+          "name": "AEETS",
+          "logo": "/sponsors/aeets.png",
+          "url": "https://www.aeets.com/"
+        },
+        {
+          "name": "Zero One",
+          "logo": "/sponsors/zeroone.png",
+          "url": "https://www.zero-one.fr/",
+          "darkBg": true
+        }
+      ]
+    }
+  ]
+}

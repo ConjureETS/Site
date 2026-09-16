@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "video": "/home/video_conjure.mp4",
+    "eyebrow": "Since 2009 · ÉTS",
+    "title": "Multimedia projects. Using teamwork. Lots of fun.",
+    "subtitle": "Conjure is ÉTS's interactive media lab: a student club where we code, draw, and playtest games from prototype to playable demo.",
+    "ctaPrimaryLabel": "Join the Discord",
+    "ctaSecondaryLabel": "See our games",
+    "ctaSecondaryHref": "/games"
+  },
+  "mission": {
+    "eyebrow": "Our mission",
+    "title": "A club, a room, a community of creators",
+    "text": "Conjure brings together students from every ÉTS program around a shared goal: learning to make video games as a team, backed by a dedicated room, training, and an active network in the industry.",
+    "stats": {
+      "years": "years running",
+      "gamelabGames": "games made at Gamelab",
+      "gamelabEditions": "Gamelab editions",
+      "partners": "partners"
+    }
+  },
+  "offerings": {
+    "eyebrow": "What the club offers",
+    "title": "Everything you need to make your first game"
+  },
+  "activities": {
+    "eyebrow": "Activities",
+    "title": "Gamelab, game jams, and an annual gala",
+    "description": "From training to competition, all the way to presenting your work to the industry.",
+    "gamesButton": "Competitions",
+    "eventsButton": "Events",
+    "gamelabBadgePrefix": "Ubisoft Gamelab",
+    "eventBadge": "Event"
+  },
+  "partners": {
+    "kicker": "Backed by",
+    "viewAll": "See all our partners →"
+  },
+  "cta": {
+    "title": "Want to make your first game with us?",
+    "text": "Join the Discord, come by the room, and jump on your next project with the team.",
+    "discordButton": "Join the Discord",
+    "contactButton": "Contact us"
+  }
+}

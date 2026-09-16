@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "learn",
+    "title": "Learn",
+    "description": "Training in programming, art and design, Unreal Engine workshops, and access to industry conferences (MIGS) so you can progress at your own pace."
+  },
+  {
+    "icon": "equipment",
+    "title": "Equipment",
+    "description": "A dedicated room equipped with VR headsets and game development tools, available to every member."
+  },
+  {
+    "icon": "compete",
+    "title": "Competitions",
+    "description": "Privileged access to industry competitions and events, and a network of game industry professionals to meet."
+  }
+]

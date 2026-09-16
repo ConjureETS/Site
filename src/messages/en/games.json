@@ -1,0 +1,135 @@
+{
+  "eyebrow": "Activities",
+  "title": "Competitions",
+  "description": "The competitions our members take part in, and the games they made along the way.",
+  "labels": {
+    "learnMore": "Learn more"
+  },
+  "gamelab": {
+    "title": "Ubisoft Gamelab",
+    "whatIsTitle": "What is it?",
+    "whatIsParagraphs": [
+      "The Game Lab is a university competition organized by Ubisoft, held every year during the winter semester. It's open to full-time undergraduate and graduate students.",
+      "Teams have 10 weeks to build a video game prototype. Each team — made up of eight students from various fields of expertise (programming, art, design, etc.) — is guided by two Ubisoft mentors."
+    ],
+    "participateTitle": "How to take part?",
+    "participateIntro": "Registration opens during the fall semester on the club's Discord. Here are a few things that can improve your chances of being selected:",
+    "participateList": [
+      "Being an involved member",
+      "Having worked on several personal or team projects",
+      "Getting the competition credited as a capstone (PFE) or internship (PS) project"
+    ],
+    "benefitsTitle": "Why take part:",
+    "benefitsText": "A unique chance to stand out in Quebec's video game industry, learn as a team, and benefit from the experience of industry professionals.",
+    "emptyText": "No Gamelab entries to show.",
+    "games": {
+      "2021": [
+        {
+          "title": "Rusted Mines",
+          "image": "/games/rusted_mines.png",
+          "description": "Award: Best Prototype",
+          "url": "https://jesusdelaprog.itch.io/rusted-minds"
+        },
+        {
+          "title": "Hide Comrade",
+          "image": "/games/hide_comrade.png",
+          "description": "Award: Audience Award",
+          "url": "https://jimmyetlim.itch.io/hide-comrade"
+        },
+        {
+          "title": "Hellivery",
+          "image": "/games/hellivery.png",
+          "description": "",
+          "url": "https://kerby-tineus.itch.io/hellivery"
+        }
+      ],
+      "2022": [
+        {
+          "title": "Homework Arena",
+          "image": "/games/homework_arena.png",
+          "description": "Award: Best Technical Challenge & Innovation\nAward: Best User Experience",
+          "url": "https://jordandionduval.itch.io/homework-arena"
+        },
+        {
+          "title": "Overdue",
+          "image": "/games/overdue.png",
+          "description": "",
+          "url": "https://craftelia.itch.io/overdue"
+        }
+      ],
+      "2023": [
+        {
+          "title": "Soul Shaper",
+          "image": "/games/soul_shaper.png",
+          "description": "Award: Best Prototype\nAward: Best Creativity & Theme Integration",
+          "url": "https://craftelia.itch.io/gamelab2023-blood-god"
+        },
+        {
+          "title": "Cosmic Express",
+          "image": "/games/cosmic_express.png",
+          "description": "",
+          "url": "https://johnytech6.itch.io/cosmic-express"
+        }
+      ],
+      "2024": [
+        {
+          "title": "The Dream Factory",
+          "image": "/games/dream_factory.png",
+          "description": "Award: Best Game Design\nAward: Best Technical Challenge & Innovation\nAward: Audience Award",
+          "url": "https://sambro.itch.io/the-dream-factory"
+        },
+        {
+          "title": "Razzle N Dazzle: The Stolen Zs",
+          "image": "/games/razzle_n_dazzle.png",
+          "description": "Award: Best 3C Quality\nAward: Best User Experience",
+          "url": "https://craftelia.itch.io/razzle-dazzle"
+        }
+      ],
+      "2025": [
+        {
+          "title": "Froggin' Around",
+          "image": "/games/frogging_around.png",
+          "description": "Award: Best Prototype\nAward: Audience Award",
+          "url": "https://jeanne444.itch.io/froggin-around"
+        },
+        {
+          "title": "Cyber Ball",
+          "image": "/games/cyber_ball.png",
+          "description": "",
+          "url": "https://jimmy-tremblay-bernier.itch.io/cyberball"
+        },
+        {
+          "title": "Royal Recoil",
+          "image": "/games/royal_recoil.png",
+          "description": "",
+          "url": "https://hcharob.itch.io/royal-recoil"
+        }
+      ],
+      "2026": [
+        {
+          "title": "Nine-Tails Protocol",
+          "image": "/games/ninetails_protocol.png",
+          "description": "",
+          "url": "https://matimoo.itch.io/nine-tails-protocol"
+        },
+        {
+          "title": "Initial-T",
+          "image": "/games/initialt.png",
+          "description": "",
+          "url": "https://riddim-crunch.itch.io/initialt"
+        },
+        {
+          "title": "Panic On Comic City !",
+          "image": "/games/panic.png",
+          "description": "",
+          "url": "https://manoelnohra.itch.io/panic-on-comic-city"
+        }
+      ]
+    }
+  },
+  "gameJams": {
+    "title": "Game Jams",
+    "emptyText": "No game jams to show.",
+    "items": []
+  }
+}

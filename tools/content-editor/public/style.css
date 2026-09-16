@@ -1,0 +1,425 @@
+:root {
+  --bg: #0b0d12;
+  --surface: #12151c;
+  --surface-2: #191d26;
+  --border: #262b36;
+  --text: #e8eaf0;
+  --text-muted: #9aa1b0;
+  --text-faint: #6b7180;
+  --primary: #7c8cff;
+  --primary-dark: #5c6be0;
+  --danger: #e2564f;
+  --ok: #3ecf8e;
+  font-family:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+  padding: 12px 20px;
+  background: rgba(11, 13, 18, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar-title {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tab {
+  flex-shrink: 0;
+}
+
+.tab {
+  background: none;
+  border: 1px solid transparent;
+  color: var(--text-muted);
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tab:hover {
+  color: var(--text);
+}
+
+.tab.active {
+  background: var(--surface-2);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.savebar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status {
+  font-size: 13px;
+  color: var(--text-faint);
+  min-width: 90px;
+  text-align: right;
+}
+
+.status.dirty {
+  color: #e0b04a;
+}
+
+.btn {
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  border-color: #3a4152;
+}
+
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #0b0d12;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-ghost {
+  background: none;
+}
+
+.btn-danger {
+  background: none;
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.btn-danger:hover {
+  background: rgba(226, 86, 79, 0.12);
+}
+
+.btn-sm {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+#app {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 28px 20px 80px;
+}
+
+img,
+.thumb {
+  max-width: 100%;
+}
+
+section.block {
+  margin-bottom: 32px;
+}
+
+h2.block-title {
+  font-size: 20px;
+  margin: 0 0 4px;
+}
+
+p.block-hint {
+  color: var(--text-faint);
+  font-size: 13px;
+  margin: 0 0 16px;
+}
+
+details.pagecopy {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 28px;
+  background: var(--surface);
+}
+
+details.pagecopy > summary {
+  cursor: pointer;
+  padding: 12px 16px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+details.pagecopy .pagecopy-body {
+  padding: 4px 16px 16px;
+}
+
+/* .card is a <details> element: the header (.card-head, a <summary>) is
+   always visible and toggles the body open/closed, so long lists collapse
+   down to one line per entry instead of forcing a scroll through every
+   field of every item to find the one you want. */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.card-head::-webkit-details-marker {
+  display: none;
+}
+
+.card-body {
+  padding: 4px 16px 16px;
+}
+
+.card-head-title {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.card-head-sub {
+  font-weight: 400;
+  color: var(--text-faint);
+  font-size: 13px;
+}
+
+.chevron {
+  display: inline-block;
+  margin-right: 8px;
+  color: var(--text-faint);
+  transition: transform 150ms ease;
+}
+
+/* Direct-child combinator: with nested cards (games inside a year/jam),
+   this must only react to the card's *own* open state, not an ancestor's. */
+.card[open] > summary .chevron {
+  transform: rotate(90deg);
+}
+
+.card-actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+  color: var(--text-faint);
+  margin-bottom: 4px;
+}
+
+.field input[type="text"],
+.field input[type="url"],
+.field textarea {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.field textarea {
+  min-height: 64px;
+  resize: vertical;
+}
+
+.field.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.field.checkbox label {
+  margin: 0;
+  color: var(--text);
+  font-size: 13px;
+}
+
+.locale-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  border-left: 2px solid var(--border);
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.locale-pair .field label::before {
+  content: attr(data-locale) " · ";
+  text-transform: uppercase;
+  color: var(--text-faint);
+  font-weight: 700;
+}
+
+.image-field {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.image-field .thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-2) center / contain no-repeat;
+  flex-shrink: 0;
+}
+
+.image-field .image-controls {
+  flex: 1;
+}
+
+.image-field input[type="file"] {
+  display: block;
+  font-size: 12px;
+  margin-top: 6px;
+  color: var(--text-faint);
+}
+
+.stringlist-item {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.stringlist-item textarea {
+  flex: 1;
+}
+
+.add-row {
+  margin: 0 0 12px;
+}
+
+.empty-hint {
+  color: var(--text-faint);
+  font-style: italic;
+  font-size: 13px;
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  z-index: 50;
+}
+
+.toast.error {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.jam-games {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+}
+
+@media (max-width: 720px) {
+  .topbar {
+    padding: 10px 14px;
+  }
+
+  .topbar-title {
+    flex-basis: 100%;
+  }
+
+  .savebar {
+    flex-basis: 100%;
+    justify-content: flex-end;
+  }
+
+  #app {
+    padding: 20px 14px 64px;
+  }
+
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .locale-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .image-field {
+    flex-wrap: wrap;
+  }
+
+  .card-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 420px) {
+  .stringlist-item {
+    flex-direction: column;
+  }
+}

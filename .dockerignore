@@ -3,11 +3,15 @@ npm-debug.log
 .git
 .gitignore
 .DS_Store
-.astro/
-dist/
+.next/
+out/
 .idea/
 .vscode/
 .github/
+.claude/
+tools/
+README.md
+.env
 .env.local
 .env.*.local
 *.log

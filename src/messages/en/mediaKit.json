@@ -1,0 +1,50 @@
+{
+  "eyebrow": "Resources",
+  "title": "Media kit",
+  "intro": "Conjure's official logos, colors, and typography, for partners, members, and the press. Please don't distort or recolor the logo.",
+  "logosHeading": "Logos",
+  "colorsHeading": "Colors",
+  "typographyHeading": "Logo typography",
+  "downloadLabel": "Download",
+  "typographyFieldLabel": "Logotype typeface",
+  "logos": [
+    {
+      "label": "Logo — for use on light backgrounds",
+      "png": "/conjure/conjure_noir_couleur.png",
+      "svg": "/conjure/conjure_noir_couleur.png",
+      "resolution": "666 × 100",
+      "surface": "light"
+    },
+    {
+      "label": "Logo — for use on dark backgrounds",
+      "png": "/conjure/conjure_blanc_couleur.png",
+      "svg": "/conjure/conjure_blanc_couleur.png",
+      "resolution": "666 × 100",
+      "surface": "dark"
+    },
+    {
+      "label": "Wordmark — black",
+      "png": "/conjure/conjure_noir.png",
+      "svg": "/conjure/conjure_noir.png",
+      "resolution": "666 × 100",
+      "surface": "light"
+    },
+    {
+      "label": "Wordmark — white",
+      "png": "/conjure/conjure_blanc.png",
+      "svg": "/conjure/conjure_blanc.png",
+      "resolution": "666 × 100",
+      "surface": "dark"
+    }
+  ],
+  "colors": [
+    { "name": "Primary — blue", "hex": "#2789CA", "className": "bg-primary" },
+    { "name": "Accent — violet", "hex": "#8B5CF6", "className": "bg-accent" },
+    { "name": "Background", "hex": "#07080B", "className": "bg-bg" },
+    { "name": "Surface", "hex": "#0F111A", "className": "bg-surface" }
+  ],
+  "typography": {
+    "name": "Supreme",
+    "usage": "The typeface used in the Conjure logotype. Don't recreate the wordmark in another font — use the logo files provided above."
+  }
+}

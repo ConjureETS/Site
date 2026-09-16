@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "video": "/home/video_conjure.mp4",
+    "eyebrow": "Depuis 2009 · ÉTS",
+    "title": "Des projets multimédia. En équipe. Beaucoup de plaisir.",
+    "subtitle": "Conjure est le laboratoire de médias interactifs de l'ÉTS : un club étudiant où l'on programme, dessine et teste des jeux du prototype jusqu'à la démo jouable.",
+    "ctaPrimaryLabel": "Rejoindre le Discord",
+    "ctaSecondaryLabel": "Voir nos projets",
+    "ctaSecondaryHref": "/games"
+  },
+  "mission": {
+    "eyebrow": "Notre mission",
+    "title": "Un club, un local, une communauté de créateur·rices",
+    "text": "Conjure réunit des étudiant·es de tous les programmes de l'ÉTS autour d'un objectif commun : apprendre à faire des jeux vidéo en équipe, avec le soutien d'un local dédié, de formations et d'un réseau actif dans l'industrie.",
+    "stats": {
+      "years": "années d'existence",
+      "gamelabGames": "jeux créés au Gamelab",
+      "gamelabEditions": "éditions du Gamelab",
+      "partners": "partenaires"
+    }
+  },
+  "offerings": {
+    "eyebrow": "Ce que le club t'offre",
+    "title": "Tout ce qu'il faut pour créer ton premier jeu"
+  },
+  "activities": {
+    "eyebrow": "Activités",
+    "title": "Gamelab, game jams et gala annuel",
+    "description": "De la formation au concours, jusqu'à la présentation de tes projets devant l'industrie.",
+    "gamesButton": "Compétitions",
+    "eventsButton": "Événements",
+    "gamelabBadgePrefix": "Ubisoft Gamelab",
+    "eventBadge": "Événement"
+  },
+  "partners": {
+    "kicker": "Ils soutiennent Conjure",
+    "viewAll": "Voir tous nos partenaires →"
+  },
+  "cta": {
+    "title": "Envie de créer ton premier jeu avec nous ?",
+    "text": "Rejoins le Discord, viens au local, et embarque sur ton prochain projet avec l'équipe.",
+    "discordButton": "Rejoindre le Discord",
+    "contactButton": "Nous contacter"
+  }
+}
