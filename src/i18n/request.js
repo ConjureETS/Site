@@ -1,5 +1,7 @@
 import { hasLocale } from "next-intl";
 import { getRequestConfig } from "next-intl/server";
+import { notFound } from "next/navigation";
+import * as rootParams from "next/root-params";
 import { routing } from "./routing";
 
 // One JSON file per namespace under messages/<locale>/ — keeps each
@@ -20,9 +22,21 @@ const NAMESPACES = [
   "contact",
 ];
 
-export default getRequestConfig(async ({ requestLocale }) => {
-  const requested = await requestLocale;
-  const locale = hasLocale(routing.locales, requested) ? requested : routing.defaultLocale;
+// Next.js 16.3+ / next-intl: `locale` arrives directly for most requests.
+// The `next/root-params` fallback (reading the [locale] segment straight
+// off the route) is what keeps Server Components that call
+// getTranslations() with no arguments eligible for static rendering —
+// the older setRequestLocale() approach stopped reliably preserving
+// static rendering for the page co-located with this root layout.
+export default getRequestConfig(async ({ locale }) => {
+  if (!locale) {
+    const paramValue = await rootParams.locale();
+    if (hasLocale(routing.locales, paramValue)) {
+      locale = paramValue;
+    } else {
+      notFound();
+    }
+  }
 
   const modules = await Promise.all(
     NAMESPACES.map((namespace) => import(`../messages/${locale}/${namespace}.json`))

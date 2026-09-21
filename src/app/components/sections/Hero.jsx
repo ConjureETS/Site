@@ -32,7 +32,7 @@ export default async function Hero() {
       <Container className="relative z-10 py-28 sm:py-32">
         <div className="max-w-3xl">
           <span className="font-mono text-xs font-medium tracking-[0.15em] uppercase text-primary-300">
-            <span className="text-text-faint">// </span>
+            <span className="text-text-faint">{"// "}</span>
             {hero.eyebrow}
           </span>
           <h1 className="mt-5 font-display text-4xl sm:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-tight text-text text-balance">

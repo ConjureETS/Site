@@ -19,7 +19,7 @@ export default function SectionHeading({
     <div className={cn("flex flex-col gap-3 max-w-2xl", alignClass, className)}>
       {eyebrow && (
         <span className="font-mono text-xs font-medium tracking-[0.15em] uppercase text-primary-300">
-          <span className="text-text-faint">// </span>
+          <span className="text-text-faint">{"// "}</span>
           {eyebrow}
         </span>
       )}

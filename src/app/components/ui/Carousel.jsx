@@ -60,6 +60,11 @@ export default function Carousel({
 
   useEffect(() => {
     if (!emblaApi) return;
+    // Sync once with Embla's current state on mount, then the listeners
+    // below keep it in sync — same external-system-sync pattern as any
+    // other subscription effect, the rule just can't tell that apart
+    // from a plain render-time setState.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     onSelect();
     emblaApi.on("select", onSelect);
     emblaApi.on("reInit", onSelect);

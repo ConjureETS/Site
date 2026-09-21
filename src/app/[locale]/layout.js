@@ -1,6 +1,6 @@
 import { Inter, Chakra_Petch } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import Navbar from "@/app/components/layout/Navbar";
@@ -51,7 +51,6 @@ export const viewport = {
 export default async function RootLayout({ children, params }) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
-  setRequestLocale(locale);
 
   const t = await getTranslations("common");
 

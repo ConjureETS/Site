@@ -84,6 +84,11 @@ export default function Navbar() {
     const handle = (e) => {
       if (e.matches) setOpen(false);
     };
+    // Sync once with the external matchMedia state on mount, then the
+    // listener below keeps it in sync — the exact pattern this rule's own
+    // docs describe as fine, it just can't tell that apart from a plain
+    // render-time setState.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (mq.matches) setOpen(false);
     if (mq.addEventListener) mq.addEventListener("change", handle);
     else mq.addListener(handle);
