@@ -30,12 +30,15 @@ const NAMESPACES = [
 // static rendering for the page co-located with this root layout.
 export default getRequestConfig(async ({ locale }) => {
   if (!locale) {
-    const paramValue = await rootParams.locale();
-    if (hasLocale(routing.locales, paramValue)) {
-      locale = paramValue;
-    } else {
-      notFound();
-    }
+    locale = await rootParams.locale();
+  }
+
+  // `locale` can arrive directly from routing even when it isn't one of
+  // ours — e.g. bots probing paths like /robots.txt or /.env get matched
+  // as a `[locale]` segment. Validate unconditionally so those 404
+  // instead of crashing on a dynamic import that can never resolve.
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
   }
 
   const modules = await Promise.all(
