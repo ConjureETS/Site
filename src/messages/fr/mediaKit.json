@@ -11,37 +11,53 @@
     {
       "label": "Logo — usage sur fond clair",
       "png": "/conjure/conjure_noir_couleur.png",
-      "svg": "/conjure/conjure_noir_couleur.png",
+      "svg": "/conjure/conjure_noir_couleur.svg",
       "resolution": "666 × 100",
       "surface": "light"
     },
     {
       "label": "Logo — usage sur fond sombre",
       "png": "/conjure/conjure_blanc_couleur.png",
-      "svg": "/conjure/conjure_blanc_couleur.png",
+      "svg": "/conjure/conjure_blanc_couleur.svg",
       "resolution": "666 × 100",
       "surface": "dark"
     },
     {
       "label": "Wordmark — noir",
       "png": "/conjure/conjure_noir.png",
-      "svg": "/conjure/conjure_noir.png",
+      "svg": "/conjure/conjure_noir_blanc.svg",
       "resolution": "666 × 100",
       "surface": "light"
     },
     {
       "label": "Wordmark — blanc",
       "png": "/conjure/conjure_blanc.png",
-      "svg": "/conjure/conjure_blanc.png",
+      "svg": "/conjure/conjure_blanc_noir.svg",
       "resolution": "666 × 100",
       "surface": "dark"
     }
   ],
   "colors": [
-    { "name": "Primaire — bleu", "hex": "#2789CA", "className": "bg-primary" },
-    { "name": "Accent — violet", "hex": "#8B5CF6", "className": "bg-accent" },
-    { "name": "Fond", "hex": "#07080B", "className": "bg-bg" },
-    { "name": "Surface", "hex": "#0F111A", "className": "bg-surface" }
+    {
+      "name": "Primaire — bleu",
+      "hex": "#2789CA",
+      "className": "bg-primary"
+    },
+    {
+      "name": "Accent — violet",
+      "hex": "#8B5CF6",
+      "className": "bg-accent"
+    },
+    {
+      "name": "Fond",
+      "hex": "#07080B",
+      "className": "bg-bg"
+    },
+    {
+      "name": "Surface",
+      "hex": "#0F111A",
+      "className": "bg-surface"
+    }
   ],
   "typography": {
     "name": "Supreme",
